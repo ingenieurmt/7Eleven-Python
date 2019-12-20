@@ -6,14 +6,14 @@ There is also a function that will automatically search a couple of websites for
 # Docker Usage
 Clone the Git repo to your Docker host and build the image:
 
-`docker build -t fuellock .`
+`docker build -t fuel .`
 
 Then run the image in a container:
 
 <pre><code>docker run -d \<br />
   --name 7Eleven_Fuel \<br />
   -p 5000:5000 \<br />
-  fuellock<br /></code></pre>
+  fuel<br /></code></pre>
 
 and browse to http://[Docker host IP]:5000.
 
@@ -35,4 +35,4 @@ An example of running with environmental variables is as follows:
   -e TZ=Australia/Melbourne \<br />
   --name 7Eleven_Fuel \<br />
   -p 5000:5000 \<br />
-  fuellock<br /></code></pre>
+  fuel<br /></code></pre>
