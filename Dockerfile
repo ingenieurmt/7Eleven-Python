@@ -1,4 +1,4 @@
-FROM python:3.8-alpine
+FROM python:alpine
 ENV BASE_URL=https://711-goodcall.api.tigerspike.com/api/v1/
 ENV TZ=UTC
 ENV PRICE_URL=https://projectzerothree.info/api.php?format=json
