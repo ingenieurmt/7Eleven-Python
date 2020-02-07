@@ -1,5 +1,5 @@
 FROM python:alpine
-ENV BASE_URL=https://711-goodcall.api.tigerspike.com/api/v1/
+ENV BASE_URL=https://apps.7eleven.com.au/api/v1/
 ENV TZ=UTC
 ENV PRICE_URL=https://projectzerothree.info/api.php?format=json
 ENV DEVICE_NAME=SM-G973FZKAXSA
