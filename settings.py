@@ -39,7 +39,7 @@ API_KEY=""
 TZ="UTC"
 
 # BASE_URL: 7-11 Mobile Application API End Point
-BASE_URL="https://711-goodcall.api.tigerspike.com/api/v1/"
+BASE_URL="https://apps.7eleven.com.au/api/v1/"
 
 # PRICE_URL: 11-Seven Price API
 PRICE_URL="https://projectzerothree.info/api.php?format=json"
