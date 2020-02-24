@@ -1,7 +1,7 @@
 name: Publish to Docker Hub
 on:
   push:
-    branches: 
+    branches:
       - dockerhub
 jobs:
   build:
@@ -14,3 +14,4 @@ jobs:
         name: ingenieurmt/fuel
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
+        tags: latest
