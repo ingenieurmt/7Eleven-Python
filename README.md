@@ -1,6 +1,6 @@
 # 7-Eleven Python
 
-![Publish to Docker Hub](https://github.com/ingenieurmt/7Eleven-Python/workflows/Publish%20to%20Docker%20Hub/badge.svg)
+![Publish "latest" to Docker Hub](https://github.com/ingenieurmt/7Eleven-Python/workflows/Publish%20%22latest%22%20to%20Docker%20Hub/badge.svg?branch=dockerhub)
 
 What is this program? This is a simple Python/Flask script that lets you lock in a fuel price from the comfort of your computer. Using this is easier than using the modified APK that is floating around the internet, because you do not need to use any other apps to fake a GPS location, and it universally works whether you are using an iPhone or an Android device. 7-Eleven Python will also automatically lock in the maximum amount of fuel that you have funds for. For instance, if you have $38.97 in your 7-Eleven Price Lock account and fuel costs $1.13/L, you will be able to lock in 35 litres.
 
