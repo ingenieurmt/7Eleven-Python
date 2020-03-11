@@ -4,7 +4,7 @@ ENV TZ=UTC
 ENV PRICE_URL=https://projectzerothree.info/api.php?format=json
 ENV DEVICE_NAME=SM-G973FZKAXSA
 ENV OS_VERSION="Android 9.0.0"
-ENV APP_VERSION=1.8.0.2027
+ENV APP_VERSION=1.10.0.2044
 
 RUN apk --update add --no-cache bash tzdata build-base libffi-dev openssl-dev
 
