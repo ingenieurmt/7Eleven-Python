@@ -260,8 +260,8 @@ def save_settings():
 
         else:
             config.set('General', 'auto_lock_enabled', "False")
-            session['auto_lock'] = False            
-            
+            session['auto_lock'] = False
+
 
         # Save the config file
         with open('./autolock.ini', 'w') as configfile:
@@ -388,7 +388,6 @@ def lockin():
                 return redirect(url_for('confirm'))
 
         # Now we want to lock in the maximum litres we can.
-        # NumberOfLitres = int(float(session['cardBalance']) / session['LockinPrice'] * 100)
         NumberOfLitres = int(150)
 
         # Lets start the actual lock in process
@@ -479,7 +478,7 @@ if __name__ == '__main__':
     # Check if the autolock.ini file exists, if it doesn't create it.
     if not (os.path.exists("./autolock.ini")):
         autolocker.create_ini()
-        
+
     # Open the config file and read the settings
     config = configparser.ConfigParser()
     config.read("./autolock.ini")
