@@ -105,19 +105,18 @@ document.getElementById("fueltypeconverted").innerHTML = fueltype;
                              <h3>Your current account balance is: <strong class='bold_balance'>${{ session['cardBalance'] }}.</strong></h3>
 														 {% if session['fuelLockActive'][0] %}
                              <br><h4 class='bold_balance'>Current fuel lock:</h4>
-                             <br><h3><strong class='bold_balance'>Expires</strong>: {{ session['fuelLockExpiry'] }}</h3>
+                             <br><h3>Fuel lock expires: <strong class='bold_balance'>{{ session['fuelLockExpiry'] }}</strong></h3>
 			     <br><h3>You have <strong class='bold_balance'>150</strong> litres of <strong class='bold_balance'><span id="fueltypeconverted"></span></strong> locked in at <strong class='bold_balance'>{{ session['fuelLockCPL'] }}</strong> c/L.</h3>
 														 {% endif %}
 														 {% if session['fuelLockActive'][1] %}
                              <br><h4 class='bold_balance'>Previous fuel lock:</h4>
                              <h3>Fuel lock expired: <strong class='bold_balance'>{{ session['fuelLockExpiry'] }}</strong></h3>
-                             <h3>You could have purchased: <strong class='bold_balance'>{{ session['fuelLockLitres'] }}</strong> litres at <strong class='bold_balance'>{{ session['fuelLockCPL'] }}</strong> c/L.</h3>
+                             <h3>You could have purchased up to <strong class='bold_balance'>150</strong> litres at <strong class='bold_balance'>{{ session['fuelLockCPL'] }}</strong> c/L.</h3>
 														 {% endif %}
 														 {% if session['fuelLockActive'][2] %}
                              <br><h4 class='bold_balance'>Previous fuel lock:</h4>
                              <h3>Redeemed: <strong class='bold_balance'>{{ session['fuelLockRedeemed'] }}</strong></h3>
-                             <h3>You locked in <strong class='bold_balance'><span id="fueltypeconverted"></span></strong> litres.</h3>
-                             <h3>Price: <strong class='bold_balance'>{{ session['fuelLockCPL'] }}</strong> c/L.</h3>
+                             <h3>You purchased up to <strong class='bold_balance'>150</strong> litres at <strong class='bold_balance'>{{ session['fuelLockCPL'] }}</strong> c/L.</h3>
 														 {% endif %}
                          </div>
                          <div class="clear"></div>
